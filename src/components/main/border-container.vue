@@ -1,17 +1,23 @@
 <template>
     <div class="border-container d-flex flex-column">
         <Positions v-if="contentType==0"></Positions>
+        <Error v-else-if="contentType==1"></Error>
+        <Heavy v-else></Heavy>
     </div>
 </template>
 <script>
 import Positions from './person-positions.vue'
+import Error from './error-styles.vue'
+import Heavy from './work-heavy.vue'
 export default {
   name: "border",
   props: {
     contentType: Number
   },
   components:{
-      Positions
+      Positions,
+      Error,
+      Heavy
   },
   data: function() {
     return {};
