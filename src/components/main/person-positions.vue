@@ -7,7 +7,7 @@
         <div v-if="curInfo" class="person-info">
           <p>人员姓名：{{curInfo.UName}}</p>
           <p>位置：{{curInfo.address}} ({{curInfo.TS_Time}})</p>
-          <p>所属项目组：{{curInfo.IdentityCard}}</p>
+          <p>所属项目：{{curInfo.SuoShuXiangMu}}</p>
           <p>联系方式：{{curInfo.telInfo}}</p>
         </div>
     </div>
