@@ -14,7 +14,7 @@
 import Border from "./border-container.vue";
 import Records from "./records.vue";
 export default {
-  name: "body",
+  name: "container",
   components: {
     Border,
     Records

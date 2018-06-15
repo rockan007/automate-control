@@ -1,17 +1,17 @@
 <template>
     <div id="main" class="main container d-flex flex-column">
         <Header></Header>
-        <Body class="flex-grow-1"></Body>
+        <Container class="flex-grow-1"></Container>
     </div>
 </template>
 <script>
 import Header from './main/header.vue'
-import Body from './main/content.vue'
+import Container from './main/content.vue'
 export default {
   name: "index",
   components:{
       Header,
-      Body
+      Container
   }
 };
 </script>
