@@ -116,15 +116,12 @@ export default {
       return (
         '<div class="info-container"><h6>' +
         info.UName +
-        '</h6><p class="info-content">' +
-        info.IdentityCard +
-        '</p><p class="info-content">' +
-        info.telInfo +
-        '</p><p class="info-content">项目:' +
+        '</h6>'+
+        '<p class="mb-0">项目:' +
         info.SuoShuXiangMu +
-        "</p><p>距离上次活动时间:" +
+        '</p><p class="mb-0">' +
         info.TS_Time +
-        "</p></div>"
+        '</p></div>'
       );
     },
     clearInfoWindows: function() {
@@ -167,6 +164,9 @@ export default {
 .positions-container {
   padding: 8px 16px;
 }
+p.info-content{
+  margin-bottom: 0;
+}
 p {
   color: #56fdff;
 }
@@ -174,9 +174,6 @@ p {
   text-align: left;
   padding: 16px 16px 0;
   line-height: 1;
-}
-.info-container {
-  line-height: 0.5;
 }
 </style>
 

@@ -9,7 +9,13 @@
               <span v-on:click="period=1" v-bind:class='{"chose-period":period==1}'>周</span>
             </p>
         </div>
+        <div class="d-flex flex-grow-1">
         <div id="error-chart" class="error-chart flex-grow-1"></div>
+        <select class="custom-select" style="width:80px;">
+              <option value="0">全部</option>
+              <option value="1">济宁</option>
+            </select>
+        </div>
     </div>
 </template>
 <script>
@@ -120,6 +126,15 @@ export default {
 .content-title {
   padding: 8px 16px 16px;
 }
+.custom-select,
+.custom-select option{
+  background-color:  rgb(23, 27, 46);;
+  border: none;
+}
+.custom-select{
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='#56fdff' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !important;
+}
+.custom-select,
 .chose-period {
   color: #56fdff;
 }
